@@ -1,0 +1,47 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.bg-blue {
+    background: #37517e;
+}
+
+.text-blue {
+    color: #37517e;
+}
+
+.hero-float {
+    animation: up-down 2s ease-in-out infinite alternate;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px)
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+.title {
+    color: #37517e;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.title::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #47b2e4;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
